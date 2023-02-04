@@ -1,0 +1,18 @@
+There are various algorithms in Machine learning. Decision Tree is a one of them that is Supervised learning technique.
+The complete process can be better understood using the below algorithm:
+
+    Step-1: Begin the tree with the root node, says S, which contains the complete dataset.
+    Step-2: Find the best attribute in the dataset using Attribute Selection Measure (ASM).
+    Step-3: Divide the S into subsets that contains possible values for the best attributes.
+    Step-4: Generate the decision tree node, which contains the best attribute.
+    Step-5: Recursively make new decision trees using the subsets of the dataset created in step -3. Continue this process until a stage is reached where you cannot further classify the nodes and called the final node as a leaf node.
+A decision tree algorithm always tries to maximize the value of information gain. 
+Entropy is a metric to measure the impurity in a given attribute. It specifies randomness in data. Entropy can be calculated as:
+
+Entropy(s)= -P(yes)log2 P(yes)- P(no) log2 P(no)
+
+    S= Total number of samples
+    P(yes)= probability of yes
+    P(no)= probability of no
+
+Gini Index= 1- ∑jPj2
